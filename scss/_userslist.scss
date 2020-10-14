@@ -1,0 +1,62 @@
+.users-list-wrapper {
+    max-width: 100%;
+    background-image: url(../assets/pdflowerset17-gloy-04_1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // height: calc(100vh - 140px);
+    height: auto;
+}
+
+.users-list {
+    box-shadow: 0px -3px 5px 0px $boxShadow;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 35px 250px;
+    .users {
+        width: 250px;
+        height: 50px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px 15px;
+        margin: 28px 0;
+        border-left: 3px solid black;
+        text-decoration: none;
+        font-family: $lato-font;
+        font-size: 19px;
+        color: $secondColor;
+        // ----- START ----- on hover background effect 
+        background: linear-gradient(to right, $leavesColor, $leavesColor);
+        background-repeat: no-repeat;
+        transition: background-size 0.6s 0s;
+        background-size: 0 100%;
+        // ----- END ----- on hover background effect 
+        &:hover {
+            background-size: 100% 100%;
+            color: $white;
+            transform: perspective(1px) translateZ(0);
+            border-left: 5px solid $thirdColor;
+            &:hover i {
+                color: $thirdColor;
+            }
+        }
+        // &:hover .draft-link {
+        //     color: $white;
+        // }
+        i {
+            font-size: 32px;
+            padding-right: 20px;
+            padding-left: 30px;
+        }
+    }
+}
+
+.bottomLine {
+    width: 100%;
+    border-bottom: 5px solid $leavesColor;
+    border-style: double;
+}
+

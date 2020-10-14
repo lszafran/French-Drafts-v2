@@ -1,0 +1,93 @@
+.draftsWrapper {
+    background-color: $darkenwhite;
+    background-image: url(../assets/pdflowerset17-gloy-04_1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.draftsList {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 30px;
+}
+
+.draftsContent {
+    width: 380px;
+    min-height: 300px;
+    border: 3px solid $leavesColor;
+    border-radius: 8px;
+    margin: 30px 20px;
+    padding: 10px 10px;
+    font-family: $main-font;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 7px 7px 9px $boxShadow;
+    transform:rotate(-4deg);
+    background-color: white;
+    .draftsTitle {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 36px;
+        margin-bottom: 5px;
+        margin-top: -5px;
+        color: $mainColor;
+        text-align: center;
+        // background-color: $noteSecondColor;
+    }
+    .borderBottom {
+        width: 100%;
+        height: 3px;
+        background-color: $mainColor;
+        margin-bottom: 10px;
+    }
+    .draftsText {
+        font-size: 13px;
+        user-select: all;
+        cursor: pointer;
+    }
+    &:nth-child(even) {
+        transform:rotate(4deg);
+        border: 3px solid $leavesColor;
+    }
+    &:nth-child(3n) {
+        transform:rotate(-3deg);
+        border: 3px solid $leavesColor;
+    }
+    &:nth-child(5n) {
+        transform:rotate(5deg);
+        border: 3px solid $leavesColor;
+    }
+    &:nth-child(7n) {
+        transform:rotate(-4deg);
+        border: 3px solid $leavesColor;
+    }
+    &:hover {
+        border-color: $thirdColor;
+        box-shadow: 2px 2px 6px $black;
+    }
+    // &:hover .draftsTitle {
+    //     color: $thirdColor;
+    // }
+    &:hover .borderBottom {
+        background-color: $thirdColor;
+    }
+    .text-note {
+        font-style: italic;
+        background-color: $noteSecondColor;
+    }
+    .text-bold {
+        font-weight: bold;
+    }
+}
+.draftsText:hover .text-note  {
+    font-style: italic;
+    background-color: $noteSecondColor;
+}
+.draftsText:hover .text-bold  {
+    font-weight: bold;
+}

@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Galada&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  cursor: default;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header-wrapper {
+  width: 100%;
+  border-bottom: 3px solid #bdbdbd;
+}
+
+.nav-header {
+  max-width: auto;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 180px;
+  background-color: #fafafa;
+}
+.nav-header .logo {
+  font-family: "Pacifico", cursive;
+  font-size: 32px;
+  color: #145374;
+}
+.nav-header .logoOranged {
+  color: #ee6f57;
+}
+.nav-header .menu {
+  font-family: "Lato", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+}
+.nav-header .menu .menu-list {
+  padding: 20px 20px;
+  text-decoration: none;
+  color: #145374;
+}
+.nav-header .menu .menu-list:hover {
+  color: #ee6f57;
+  border-bottom: 5px solid #ee6f57;
+}
+.nav-header .menu .menu-list {
+  margin: 0px 30px;
+}
+.nav-header .menu .previous-page {
+  margin-right: 50px;
+  font-size: 40px;
+  border: 0;
+  font-size: 100%;
+  font-family: inherit;
+  background-color: #fafafa;
+  color: #145374;
+}
+.nav-header .menu .previous-page:hover {
+  cursor: pointer;
+  color: #ee6f57;
+}
+.nav-header .menu .previous-page .fa-arrow-alt-circle-left {
+  font-size: 32px;
+}
+
+.users-list-wrapper {
+  max-width: 100%;
+  background-image: url(../assets/pdflowerset17-gloy-04_1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+}
+
+.users-list {
+  box-shadow: 0px -3px 5px 0px #bdbdbd;
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 35px 250px;
+}
+.users-list .users {
+  width: 250px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 15px;
+  margin: 28px 0;
+  border-left: 3px solid black;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-size: 19px;
+  color: #00334e;
+  background: linear-gradient(to right, #1c746b, #1c746b);
+  background-repeat: no-repeat;
+  transition: background-size 0.6s 0s;
+  background-size: 0 100%;
+}
+.users-list .users:hover {
+  background-size: 100% 100%;
+  color: #ffffff;
+  transform: perspective(1px) translateZ(0);
+  border-left: 5px solid #ee6f57;
+}
+.users-list .users:hover:hover i {
+  color: #ee6f57;
+}
+.users-list .users i {
+  font-size: 32px;
+  padding-right: 20px;
+  padding-left: 30px;
+}
+
+.bottomLine {
+  width: 100%;
+  border-bottom: 5px solid #1c746b;
+  border-style: double;
+}
+
+.footer-wrapper {
+  width: 100%;
+}
+
+.main-footer {
+  max-width: auto;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fafafa;
+  box-shadow: 0px -3px 5px 0px #bdbdbd;
+  padding: 0 180px;
+}
+.main-footer .nav-footer-title {
+  color: #145374;
+  font-size: 24px;
+  font-family: "Pacifico", cursive;
+}
+.main-footer .nav-footer-title .fa {
+  -webkit-animation: hearthAndCoffee 2s infinite alternate linear;
+          animation: hearthAndCoffee 2s infinite alternate linear;
+}
+@-webkit-keyframes hearthAndCoffee {
+  0% {
+    color: #e6aeae;
+  }
+  100% {
+    color: #cd0a0a;
+  }
+}
+@keyframes hearthAndCoffee {
+  0% {
+    color: #e6aeae;
+  }
+  100% {
+    color: #cd0a0a;
+  }
+}
+.main-footer .nav-footer-text {
+  color: #145374;
+  font-size: 19px;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+}
+.main-footer .nav-footer-text:hover {
+  cursor: pointer;
+  color: #ee6f57;
+}
+.main-footer .nav-footer-text .fa {
+  padding-left: 10px;
+  font-size: 24px;
+  -webkit-animation: hearthAndCoffee 2s infinite alternate linear;
+          animation: hearthAndCoffee 2s infinite alternate linear;
+}
+
+.draftsWrapper {
+  background-color: #fafafa;
+  background-image: url(../assets/pdflowerset17-gloy-04_1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.draftsList {
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 30px;
+}
+
+.draftsContent {
+  width: 380px;
+  min-height: 300px;
+  border: 3px solid #1c746b;
+  border-radius: 8px;
+  margin: 30px 20px;
+  padding: 10px 10px;
+  font-family: "Tahoma", sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 7px 7px 9px #bdbdbd;
+  transform: rotate(-4deg);
+  background-color: white;
+}
+.draftsContent .draftsTitle {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 36px;
+  margin-bottom: 5px;
+  margin-top: -5px;
+  color: #145374;
+  text-align: center;
+}
+.draftsContent .borderBottom {
+  width: 100%;
+  height: 3px;
+  background-color: #145374;
+  margin-bottom: 10px;
+}
+.draftsContent .draftsText {
+  font-size: 13px;
+  -webkit-user-select: all;
+     -moz-user-select: all;
+      -ms-user-select: all;
+          user-select: all;
+  cursor: pointer;
+}
+.draftsContent:nth-child(even) {
+  transform: rotate(4deg);
+  border: 3px solid #1c746b;
+}
+.draftsContent:nth-child(3n) {
+  transform: rotate(-3deg);
+  border: 3px solid #1c746b;
+}
+.draftsContent:nth-child(5n) {
+  transform: rotate(5deg);
+  border: 3px solid #1c746b;
+}
+.draftsContent:nth-child(7n) {
+  transform: rotate(-4deg);
+  border: 3px solid #1c746b;
+}
+.draftsContent:hover {
+  border-color: #ee6f57;
+  box-shadow: 2px 2px 6px #000000;
+}
+.draftsContent:hover .borderBottom {
+  background-color: #ee6f57;
+}
+.draftsContent .text-note {
+  font-style: italic;
+  background-color: #adfaad;
+}
+.draftsContent .text-bold {
+  font-weight: bold;
+}
+
+.draftsText:hover .text-note {
+  font-style: italic;
+  background-color: #adfaad;
+}
+
+.draftsText:hover .text-bold {
+  font-weight: bold;
+}
+
+.liensUtiles-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../assets/pdflowerset17-gloy-04_1.jpg);
+  background-position: center;
+  background-size: 100% 120%;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.liensUtiles-container {
+  width: 350px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 50px;
+  font-family: "Tahoma", sans-serif;
+  border-left: 3px solid black;
+  font-family: "Lato", sans-serif;
+  font-size: 19px;
+  color: #00334e;
+  background: linear-gradient(to right, #1c746b, #1c746b);
+  background-repeat: no-repeat;
+  transition: background-size 0.6s 0s;
+  background-size: 0 100%;
+}
+.liensUtiles-container:hover {
+  background-size: 100% 100%;
+  transform: perspective(1px) translateZ(0);
+  border-left: 5px solid #ee6f57;
+}
+.liensUtiles-container:hover:hover i {
+  color: #ee6f57;
+}
+.liensUtiles-container:hover:hover .liensUtiles-title-link {
+  color: #ffffff;
+}
+.liensUtiles-container .liensUtiles-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+.liensUtiles-container .liensUtiles-title .liensUtiles-title-link {
+  text-decoration: none;
+  color: #145374;
+}
+.liensUtiles-container i {
+  font-size: 32px;
+  padding-right: 20px;
+  padding-left: 30px;
+}
+
+@media (max-width: 1065px) {
+  .users-list {
+    padding: 40px 200px;
+  }
+
+  .nav-header {
+    padding: 0 60px;
+  }
+}
+@media (min-width: 1600px) {
+  .users-list {
+    padding: 40px 360px;
+    max-width: 1100px;
+    margin: 0 auto;
+    box-shadow: none;
+  }
+
+  .draftsList {
+    margin: 0 120px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,55 @@
+.header-wrapper {
+    width: 100%;
+    border-bottom: 3px solid $boxShadow;
+}
+
+.nav-header {
+    max-width: auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 180px;
+    background-color: $darkenwhite;
+    .logo {
+        font-family: $logo-font;
+        font-size: 32px;
+        color: $mainColor;
+    }
+    .logoOranged {
+        color: $thirdColor;
+    }
+    .menu {
+        font-family: $lato-font;
+        font-size: 26px;
+        font-weight: 400;
+        .menu-list {
+            padding: 20px 20px;
+            text-decoration: none;
+            color: $mainColor;
+            &:hover {
+                color: $thirdColor;
+                border-bottom: 5px solid $thirdColor;
+            }
+            & {
+                margin: 0px 30px;
+            }
+        }
+        .previous-page {
+            margin-right: 50px;
+            font-size: 40px;
+            border: 0;
+            font-size: 100%;
+            font-family: inherit;
+            background-color: $darkenwhite;
+            color: $mainColor;
+            &:hover {
+                cursor: pointer;
+                color: $thirdColor;
+            }
+            .fa-arrow-alt-circle-left {
+                font-size: 32px;
+            }
+        }
+    }
+}

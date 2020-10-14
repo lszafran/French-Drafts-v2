@@ -1,0 +1,45 @@
+.footer-wrapper {
+    width: 100%;
+}
+
+.main-footer {
+    max-width: auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: $darkenwhite;
+    box-shadow: 0px -3px 5px 0px $boxShadow;
+    padding: 0 180px;
+
+    .nav-footer-title {
+        color: $mainColor;
+        font-size: 24px;
+        font-family: $logo-font;
+        .fa {
+            animation: hearthAndCoffee 2s infinite alternate linear;
+        }
+    }
+
+    @keyframes hearthAndCoffee {
+        0% {color: #e6aeae;}
+        100% {color: #cd0a0a;}
+    }
+
+    .nav-footer-text {
+        color: $mainColor;
+        font-size: 19px;
+        font-family: $lato-font;
+        text-decoration: none;
+        &:hover {
+            cursor: pointer;
+            color: $thirdColor;
+        }
+        .fa {
+            padding-left: 10px;
+            font-size: 24px;
+            animation: hearthAndCoffee 2s infinite alternate linear;
+        }
+    }
+}
